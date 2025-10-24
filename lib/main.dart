@@ -25,14 +25,20 @@ class MyHome extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("ini adalah judul dari halaman"),
+        title: Text("Container"),
         centerTitle: true,
         backgroundColor: Colors.blueGrey,
         actions: [
           IconButton(
             onPressed: () {
-              print('menu button pressed');
+              print('Home button pressed');
             },
+            icon: const Icon(Icons.home),
+          ),
+        IconButton(
+          onPressed: (){
+            print('menu button pressed');
+          },
             icon: const Icon(Icons.menu),
           ),
         ],
@@ -64,6 +70,21 @@ class MyHome extends StatelessWidget {
                   colors: [Colors.blue, Colors.red],
                 ),
               ),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Icon(Icons.person, color: Colors.white, size: 30),
+                  SizedBox(height: 8),
+                  Text(
+                    "Profile",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 16,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ],
+              ),
             ),
             SizedBox(width: 50), // jarak atau spasi box
             Container(
@@ -89,8 +110,23 @@ class MyHome extends StatelessWidget {
                   colors: [Colors.blue, Colors.yellow],
                 ),
               ),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Icon(Icons.home, color: Colors.white, size: 30),
+                  SizedBox(height: 8),
+                  Text(
+                    "Profile",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 16,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ],
+              ),
             ),
-            SizedBox(width: 50),// jarak atau spasi box
+            SizedBox(width: 50), // jarak atau spasi box
             Container(
               width: 100,
               height: 100,
@@ -113,6 +149,21 @@ class MyHome extends StatelessWidget {
                   end: Alignment.bottomLeft,
                   colors: [Colors.blue, Colors.greenAccent],
                 ),
+              ),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Icon(Icons.notifications, color: Colors.white, size: 30),
+                  SizedBox(height: 8),
+                  Text(
+                    "About",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 16,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ],
               ),
             ),
           ],
