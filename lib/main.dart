@@ -35,12 +35,8 @@ class MyHome extends StatelessWidget {
             },
             icon: const Icon(Icons.home),
           ),
-        IconButton(
-          onPressed: (){
-            print('menu button pressed');
-          },
-            icon: const Icon(Icons.menu),
-          ),
+        
+          
         ],
       ),
       body: Center(
