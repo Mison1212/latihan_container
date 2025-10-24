@@ -35,7 +35,12 @@ class MyHome extends StatelessWidget {
             },
             icon: const Icon(Icons.home),
           ),
-        
+        IconButton(
+          onPressed: (){
+            print('Search button pressed');
+          },
+            icon: const Icon(Icons.search),
+          ),
           
         ],
       ),
